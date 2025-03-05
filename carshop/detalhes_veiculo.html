@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Carro</title>
+    <link rel="stylesheet" href="./css/detalhes.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo"><a href="index.html">CarShop</a></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#galeria">Carros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="margin-top: 100px;">
+        <h1>Detalhes do Carro</h1>
+        
+        <div class="carro-info">
+            <div class="galeria" style="width: 15%; display: block;float: left;">
+                <img src="./img/cae002.png" alt="Imagem 1" class="thumb" onclick="abrirModal('./img/cae002.png')">
+                <img src="./img/cae002.png" alt="Imagem 2" class="thumb" onclick="abrirModal('./img/cae002.png')">
+                <img src="./img/cae002.png" alt="Imagem 3" class="thumb" onclick="abrirModal('./img/cae002.png')">
+            </div>
+            <img src="./img/cae002.png" width="500px"/>
+            <h2>Modelo: BMW X5</h2>
+            <p><strong>Ano:</strong> 2022</p>
+            <p><strong>Combustível:</strong> Gasolina</p>
+            <p><strong>Quilometragem:</strong> 25.000 km</p>
+            <p><strong>Acessórios:</strong> Ar-condicionado, Teto solar, Banco de couro, Câmbio automático</p>
+        </div>
+
+        
+    </div>
+
+    <!-- Modal para Exibir Imagem Ampliada -->
+    <div id="modal" class="modal">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <img class="modal-conteudo" id="imgModal">
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

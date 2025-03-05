@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Carros</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html">CarShop</a></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#galeria">Carros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner-container">
+        <div class="banner-slide">
+            <div class="slide"><img src="./img/banner001.jpg" alt="Carro 1" width="100%"></div>
+            <div class="slide"><img src="./img/banner002.avif" alt="Carro 2" width="100%"></div>
+            <div class="slide"><img src="./img/banner003.jpg" alt="Carro 3" width="100%"></div>
+        </div>
+        <button id="btn-slide" class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button id="btn-slide" class="next" onclick="mudarSlide(1)">&#10095;</button>
+    </div>
+    
+    <section id="galeria">
+        <h2>Galeria de Carros</h2>
+        <div class="grid">
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"><img src="./img/car001.png" alt="Carro A"></a>
+                <h3>Carro A</h3>
+                <p>R$ 50.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/cae002.png" alt="Carro B"></a>
+                <h3>Carro B</h3>
+                <p>R$ 60.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/car003.png" alt="Carro C"></a>
+                <h3>Carro C</h3>
+                <p>R$ 70.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/car001.png" alt="Carro A"></a>
+                <h3>Carro A</h3>
+                <p>R$ 50.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/cae002.png" alt="Carro B"></a>
+                <h3>Carro B</h3>
+                <p>R$ 60.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/car003.png" alt="Carro C"></a>
+                <h3>Carro C</h3>
+                <p>R$ 70.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/car001.png" alt="Carro A"></a>
+                <h3>Carro A</h3>
+                <p>R$ 50.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/cae002.png" alt="Carro B"></a>
+                <h3>Carro B</h3>
+                <p>R$ 60.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/car003.png" alt="Carro C"></a>
+                <h3>Carro C</h3>
+                <p>R$ 70.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/car001.png" alt="Carro A"></a>
+                <h3>Carro A</h3>
+                <p>R$ 50.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/cae002.png" alt="Carro B"></a>
+                <h3>Carro B</h3>
+                <p>R$ 60.000</p>
+            </div>
+            <div class="carro">
+                <a href="./detalhes_veiculo.html"></a><img src="./img/car003.png" alt="Carro C"></a>
+                <h3>Carro C</h3>
+                <p>R$ 70.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button id="btn-form" type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Venda de Carros. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
