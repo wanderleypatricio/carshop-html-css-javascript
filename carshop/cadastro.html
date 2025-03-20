@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Veículos</h1>
+        <form id="cadastroVeiculo">
+            <label>Modelo:</label>
+            <input type="text" id="modelo" required>
+
+            <label>Ano:</label>
+            <input type="number" id="ano" required>
+
+            <label>Combustível:</label>
+            <select id="combustivel">
+                <option value="Gasolina">Gasolina</option>
+                <option value="Álcool">Álcool</option>
+                <option value="Diesel">Diesel</option>
+            </select>
+
+            <label>Quilometragem:</label>
+            <input type="number" id="km" required>
+
+            <label>Preço (R$):</label>
+            <input type="number" id="preco" required>
+
+            <label>Imagem (URL):</label>
+            <input type="text" id="imagem" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
